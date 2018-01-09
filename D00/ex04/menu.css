@@ -1,0 +1,53 @@
+body
+{
+	width: 100%;
+	height: auto;
+}
+ul
+{
+	width: 100%;
+	height: 20%;
+	margin: auto;
+	margin-top: 1%;
+}
+li
+{
+	background-color: #F6D8CE;
+	height: auto;
+	text-align: center;
+	font-size: 1.5vw;
+	vertical-align: middle;
+	list-style-type: none;
+	position: relative;
+}
+a
+{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+ul ul
+{
+	display: none;
+	position: absolute;
+	padding: 0;
+	background-color: #F6D8CE;
+}
+.n0 li
+{
+	display: inline-block;
+	width: 10%;
+}
+.n1 li
+{
+	display: block;
+	width: 100%;
+	margin-top: -2%;
+}
+li:hover ul.n1
+{
+	display: block;
+}
+ul.n0{background-color: #F6D8CE;}

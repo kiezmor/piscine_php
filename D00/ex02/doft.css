@@ -1,0 +1,180 @@
+html, body
+{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-color: rgb(80, 80, 80);
+}
+p
+{
+	font-size: 0.8vw;
+	margin: 0;
+	font-family: Verdana;
+}
+.block
+{
+	background-color: rgb(144, 144, 144);
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+}
+/** Top Block **/
+.top
+{
+	width: 74%;
+	height: auto;
+	margin: auto;
+	padding: 1%;
+	margin-top: 1%;
+	position: relative;
+	z-index: 1;
+}
+.topl
+{
+	display: inline-block;
+	width: 35%;
+}
+.topr
+{
+	width: 100%;
+	display: inline-block;
+	float: right;
+	width: 3%;
+}
+.topri
+{
+	margin-left: 40%;
+	width: 20px;
+	height: 20px;
+}
+.loupe
+{
+	width: 22%;
+	z-index: 2;
+	margin-left: 39%;
+	position: absolute;
+}
+/* Top Block */
+/** Left Block **/
+.left
+{
+	width: 8%;
+	height: auto;
+	padding: 1%;
+	float: left;
+	z-index: 1;
+}
+.imgl
+{
+	display: block;
+	width: 60%;
+	margin: auto;
+	margin-top: 10%;
+}
+.eye{border: 2px solid red; border-radius: 5px;}
+/* Left Block */
+/** Buddy **/
+.content
+{
+	display: inline-block;
+	width: 70%;
+	height: 50%;
+	margin-left: 15%;
+	margin-top: 2%;
+}
+.center
+{
+	width: 72%;
+	height: auto;
+	padding: 1%;
+	float: left;
+	margin-left: 3%;
+	z-index: 1;
+}
+.cluster
+{
+	width: 100%;
+	display: block;
+	margin: auto;
+	z-index: 2;
+	height: 100%;	
+}
+.ikea
+{
+	width: 10%;
+    height: 120px;
+    float: left;
+    margin-top: -23%;
+    margin-left: 32%;
+    position: relative;
+}
+.apple
+{
+    width: 20%;
+    height: 120px;
+    float: right;
+    margin-top: -24%;
+    margin-right: 2%;
+    position: relative;
+}
+/* Buddy */
+/** Right Block **/
+.right
+{
+	width: 8%;
+	height: auto;
+	padding: 1%;
+	float: right;
+	padding-bottom: 13%;
+}
+.bricks
+{
+	display: block;
+	background: url("resources/brick.jpg");
+	background-repeat: repeat;
+	background-size: 27%
+}
+.brick
+{
+	display: block;
+	width: 30%;
+	visibility: hidden;
+}
+/* Right Block */
+/** Chat **/
+.chat 
+{
+	display: inline-block;
+	background-color: rgb(140, 253, 142);
+	width: 36%;
+	height: auto;
+	z-index: 4;
+	margin-top: -5%;
+	margin-left: -5%;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+	padding: 1%;
+	padding-bottom: 5%;
+}
+.form
+{
+	width: 65%;
+	height: 10%;
+	display: inline-block;
+	margin-top: 1%;
+	font-size: 0.8vw;
+}
+.ans
+{
+	background-color: rgb(214, 214, 214);
+	border-color: rgb(80, 80, 80);
+	border: 1px solid;
+	border-style: none;
+	height: 10%;
+	vertical-align: center;
+	display: inline-block;
+	width: 20%;
+	font-size: 0.8vw;
+}
+.ordi{text-shadow: 6px 6px 5.5px red;}
+.b{font-size: 2vw; font-family: Georgia;}
+/* Chat */

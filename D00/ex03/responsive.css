@@ -1,0 +1,45 @@
+	body
+	{
+		margin: auto;
+		width: 100%
+	} 
+	td
+	{
+		width:5%;
+		height: auto;
+		padding: 3px;
+	}
+	h1
+	{
+		font-size: 3vw;
+		font-weight: bold;
+		text-align: center;
+	}
+	p
+	{
+		font-size: 1vw;
+	}
+	.an
+	{
+		font-size: 1vw;
+	}
+	.aw
+	{
+		font-size: 1vw;
+		text-align: center;
+	}
+	.i
+	{
+		width: 80%; 
+		height: auto;
+	}
+	.r{background-color: red;}
+	.o{background-color: orange;}
+	.y{background-color: yellow;}
+	.g{background-color: green;}
+	.bc{background-color: #00FFFF;}
+	.bf{background-color: blue;}
+	.bv{background-color: #8258FA;}
+	.v{background-color: #B404AE;}
+	.m{background-color: #8A4B08;}
+	.mc{background-color: #F7BE81;}
