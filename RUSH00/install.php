@@ -2,7 +2,7 @@
 	include 'connect.php';
 	if (isset($_POST['submit']))
 	{
-		$sql = file_get_contents("emarket.sql");
+		$sql = file_get_contents("db.sql");
 		$sql_array = explode(";", $sql);
 		foreach ($sql_array as $p) 
 			mysqli_query($link, $val);
