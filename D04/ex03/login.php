@@ -17,7 +17,9 @@ if ($_GET["login"] != NULL)
 			exit();
 		}
 		else
+		{
 			$_SESSION["loggued_on_user"] = '';
+		}
 	}
 	else
 		error();

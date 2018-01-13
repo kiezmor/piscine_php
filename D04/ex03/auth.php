@@ -1,20 +1,14 @@
 <?php
-function auth($login, $passwd)
-{
-	$grain = "F5x$1@v";
-	$sel = "U84#1x%";
-	$file = '../private/passwd';
-	$data = file_get_contents($file);
-	$array = unserialize($data);
-	$i = 0;
-	while(isset($array[$i]))
-	{
-		if ($array[$i]["login"] === $login && $array[$i]["passwd"] === hash("sha1", $grain . $passwd . $sel))
-		{
-			return TRUE;
-		}
-		$i++;
-	}
-	return FALSE;
-}
+    function auth($login, $passwd) {
+        if (!$login || !$passwd)
+            return false;
+        $account = unserialize(file_get_contents('../private/passwd'));
+        if ($account) {
+            foreach ($account as $k => $v) {
+                if ($v['login'] === $login && $v['passwd'] === hash('whirlpool', $passwd))
+                    return true;
+            }
+        }
+        return false;
+    }
 ?>
