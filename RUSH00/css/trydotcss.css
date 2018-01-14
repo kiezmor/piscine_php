@@ -34,7 +34,7 @@ a{
 
 a:hover{
 	text-decoration: none;
-	color: #96ca2d;
+	color: brown;
 
 
 }
@@ -79,7 +79,7 @@ ul.menu {
 }
 .menu{
 	background-color: #FAFAFA;
-	border-top: 1px solid #96ca2d;
+	border-top: 1px solid black;
 	margin-bottom: 0;
 }
 .menu li{
@@ -97,7 +97,7 @@ ul.menu {
 
 .menu li a:hover{
 	text-decoration: none;
-	color: #96ca2d;
+	color: brown;
     font-weight: 700;
 	padding: 22px 26px 20px;
 }
@@ -111,7 +111,7 @@ ul.menu {
 }
 
 .prod_ran section:hover{
-    border: 1px solid #96ca2d;
+    border: 1px solid black;
 }
 
 .prod_ran section img{
@@ -134,7 +134,7 @@ ul.menu {
 	padding-left: 0;
 }
 .tab-foot h4{
-	color: #96ca2d;
+	color: brown;
 	padding: 10px 0 16px;
 	border-bottom: 1px solid #e1e1e1;
 }
@@ -145,7 +145,7 @@ ul.menu {
 }
 
 .price{
-	color: #96ca2d;
+	color: black;
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -155,13 +155,13 @@ ul.menu {
 footer{
 	margin-top: 45px;
 	background-color: #FAFAFA;
-	border-top: 1px solid #96ca2d;
+	border-top: 1px solid black;
 }
 
 
 .form h3{
-	    background: none repeat scroll 0 0 #fafafa;
-    border-bottom: 1px solid #e6e6e6;
+	background: none repeat scroll 0 0 #fafafa;
+    border-bottom: 1px solid black;
     border-radius: 5px 5px 0 0;
     font-size: 14px;
     font-weight: 700;
@@ -170,7 +170,7 @@ footer{
 }
 
 .form fieldset{
-	  border: 1px solid #e6e6e6;
+	border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
     margin: 10px 0 25px;
@@ -190,8 +190,8 @@ footer{
 
 
 input{
-	   background: none repeat scroll 0 0 #f2f2f2;
-    border: 1px solid #96ca2d;
+	background: none repeat scroll 0 0 #f2f2f2;
+    border: 1px solid black;
     border-radius: 5px;
     color: #4c4c4c;
     cursor: pointer;
@@ -225,9 +225,10 @@ input{
     width: 45%;
 }
 .labele .submit{
-	background: none repeat scroll 0 0 #96ca2d;
+	background: none repeat scroll 0 0 brown;
     border: medium none;
     border-radius: 5px;
+    border: 1px solid black;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -278,7 +279,7 @@ input{
 }
 
 .desc .price{
-  border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
     font-size: 40px !important;
     margin-top: -13px;
     padding: 27px 0;
@@ -296,7 +297,7 @@ input{
 }
 
 .addcart{
-	background-color: #96CA2C;
+	background-color: brown;
 	color: white;
 	font-weight: bold;
 }

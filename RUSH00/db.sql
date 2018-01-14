@@ -12,7 +12,6 @@ SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -21,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `miniboutique`
 --
-CREATE DATABASE IF NOT EXISTS `miniboutique` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `miniboutique` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 USE `miniboutique`;
 
 -- --------------------------------------------------------

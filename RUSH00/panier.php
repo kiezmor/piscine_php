@@ -35,7 +35,7 @@ if (array_key_exists('cart', $_SESSION) && $_SESSION['cart'] !== NULL)
 echo "</table>";
 echo '<span class="total">Total : '.$total.'€</span>';
 }
-if (!isset($_SESSION['loggued_usr']) || $_SESSION['loggued_usr'] === "")
+if (!isset($_SESSION['loggued_on_user']) || $_SESSION['loggued_on_user'] === "")
 	echo "<a href='account.php' class='addcart button'>Se connecter</a>";
 else
 {

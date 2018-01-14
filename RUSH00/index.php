@@ -8,9 +8,9 @@
 ?>
 </head>
 <body>
-<?php
-	include "core/random_article.php"; 
-	include "core/footer.php";
-?>
+<div class="prod_ran">
+<?php include "core/rng.php";?>
+</div>
+<?php include "core/footer.php";?>
 </body>
 </html>

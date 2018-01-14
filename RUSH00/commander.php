@@ -2,7 +2,7 @@
 include 'core/header.php';
 if (isset($_POST['sacafoutre']))
 {
-$email = $_SESSION['loggued_usr'];
+$email = $_SESSION['loggued_on_user'];
 $sql = "SELECT id FROM client WHERE email='$email'";
 $array = mysqli_query($link, $sql);
 $id = mysqli_fetch_assoc($array);

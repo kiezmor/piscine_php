@@ -8,7 +8,7 @@ if (isset($_POST['conne']))
 		echo "Veuillez entrer un mot de passe";
 	else
 	{
-		$passwd = hash("oppaicrew", $_POST['passwd']);
+		$passwd = hash("whirlpool", $_POST['passwd']);
 		$mail = mysqli_real_escape_string($link, $_POST['mail']);
 		$query = 'SELECT email,mdp FROM client WHERE email="'.$mail.'" AND mdp="'.$passwd.'"';
 		$array = mysqli_query($link, $query);
@@ -18,7 +18,7 @@ if (isset($_POST['conne']))
 		}
 		else
 		{
-			$_SESSION['loggued_usr'] = $_POST['mail'];
+			$_SESSION['loggued_on_user'] = $_POST['mail'];
 			header("Location: index.php");
 		}
 	}

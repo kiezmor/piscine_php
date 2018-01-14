@@ -5,7 +5,7 @@
 ?>
 
 <div class="form">
-<form id="acc_form+" class="std" method="post" action="create.php">
+<form id="acc_form" class="std" method="post" action="account.php">
 	<fieldset>
 		<h3>Creer un compte</h3>
 		<?php   
@@ -34,7 +34,7 @@
 </div>
 
 <div class="form">
-<form id="acc_form+" class="std" method="post" action="create.php">
+<form id="acc_form" class="std" method="post" action="account.php">
 	<fieldset>
 		<h3>Se connecter</h3>
 		<?php   
