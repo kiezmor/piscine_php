@@ -35,7 +35,12 @@
 		<div class="tab-foot">
 			<h4>Compte</h4>
 			<div class="text">
-				<a href="user.php">Parametres du compte</a>
+				<?php
+				if(isset($_SESSION['loggued_on_user']) && $_SESSION['loggued_on_user'] != "")
+				{
+					echo "<a href=\"user.php\">Parametres du compte</a>";
+				}
+				?>
 			</div>
 		</div>
 	</center>

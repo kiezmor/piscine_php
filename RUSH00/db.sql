@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `miniboutique`
+-- Database: `emarket`
 --
-CREATE DATABASE IF NOT EXISTS `miniboutique` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
-USE `miniboutique`;
+CREATE DATABASE IF NOT EXISTS `emarket` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+USE `emarket`;
 
 -- --------------------------------------------------------
 
