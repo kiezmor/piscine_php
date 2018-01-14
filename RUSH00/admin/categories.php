@@ -11,7 +11,7 @@ $query = mysqli_query($link, "SELECT * FROM `categories`");
 while (($array = mysqli_fetch_assoc($query)) !== NULL)
 {
 	echo "<section>";
-	echo "<p><a href=modify_cat?id=";
+	echo "<p><a href=modify_cat.php?id=";
 	echo $array['id'];
 	echo ">";
 	echo $array['nom'];

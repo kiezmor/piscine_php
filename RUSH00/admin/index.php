@@ -35,7 +35,8 @@ else
 	{
 		$conne = "OK";
 		$_SESSION['admin'] = $_POST['mail'];
-		header("Location: accueil.php"); ##<-- need to look at
+		echo '<script>window.location="accueil.php"</script>';
+		// header("Location:./accueil.php"); ##<-- need to look at
 	}
 }
 }

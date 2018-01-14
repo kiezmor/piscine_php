@@ -1,5 +1,5 @@
 <?php
-	$link = mysqli_connect("localhost", "root", "", "") or die("Error ".mysql_error($link));
+	$link = mysqli_connect("localhost", "root", "root", "") or die("Error ".mysql_error($link));
 	// include 'connect.php';
 	if (isset($_POST['submit']))
 	{

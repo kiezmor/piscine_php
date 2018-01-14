@@ -23,6 +23,6 @@
 			$id = $_GET['id'];
 			$nom = mysqli_real_escape_string($link, $nom);
 			mysqli_query($link, "DELETE FROM categories WHERE id='$id'");
-			header("Location:categories.php");
+			echo '<script>window.location="categories.php"</script>';
 	}
 ?>

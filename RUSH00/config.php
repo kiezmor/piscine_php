@@ -7,7 +7,7 @@
 		{
 			if ($array['login'] === $_POST['login'])
 			{
-				error();
+				echo "Ce compte existe déjà";
 				return ("Ce compte existe déjà");
 			}
 		}
@@ -19,7 +19,8 @@
 				VALUES (?, ?)");
 			$bind = mysqli_stmt_bind_param($stmt, "ss", $_POST['login'], hash("whirlpool", $_POST['passwd']));
 			$exec = mysqli_stmt_execute($stmt);
-			header("Location: index.php");
+			echo '<script>window.location="index.php"</script>';
+			// header("Location:./index.php");
 		}
 	}
 ?>

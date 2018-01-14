@@ -85,7 +85,8 @@ $id = mysqli_real_escape_string($link, $_GET['id']);
 	$sql = "DELETE FROM client WHERE id=$id";
 	
 	mysqli_query($link, $sql);
-	header("Location:client.php");
+	echo '<script>window.location="client.php"</script>';
+	// header("Location:./client.php");
 }
 
 ?>
