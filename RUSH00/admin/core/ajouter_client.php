@@ -55,7 +55,7 @@ else
 		$bind = mysqli_stmt_bind_param($stmt, "ssssssss", $_POST['mail'], $_POST['lname'], $_POST['fname'], 
 			hash("whirlpool", $_POST['passwd']), $_POST['address'], $_POST['postal_code'], $_POST['city'], $_POST['phone']);
 		$exec = mysqli_stmt_execute($stmt);
-	$err_enre = TRUE;
+		$err_enre = TRUE;
 	}
 	else{
 		$err_enre = check_potential_error();

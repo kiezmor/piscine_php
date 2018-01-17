@@ -15,7 +15,8 @@
 <link rel="stylesheet" type="text/css" href="css/trydotcss.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <div class="head">
-	<a href="index.php"><img src="img/cavelogo.jpg" height=80px></a>
+	<a href="index.php"><img class="logo" src="img/cavelogo.jpg" height=80px></a>
+	<title>The Cave</title>
 	<div class="account">
 		<ul>
 			<?php
@@ -24,11 +25,21 @@
 					echo "<li><a href=account.php?mail=";
 					echo $_SESSION['loggued_on_user'];
 					echo "<li><a href='logout.php'>Deconnexion<br></a></li>";
+					echo "<a href=\"user.php\">Parametres du compte</a>";
 				}
 				else
-					echo "<li><a href=\"account.php\">Connexion/Inscription</a></li>";
+					echo "<li><a href=\"account.php\">
+									<div>
+										<img src='img/account.png' id='accountImg'>
+									</div>
+									Connexion/Inscription</a>
+								</li>";
 			?>
-			<li><a href="panier.php">Panier:<?php echo $_SESSION['total_cart'];?></a></li>
+			<li>
+				<div><a href="panier.php">
+					<img src="img/shopping_cart.png" href="panier.php">
+				</div>
+				Panier : <?php echo $_SESSION['total_cart'];?></li>
 		</ul>
 	</div>
 </div>

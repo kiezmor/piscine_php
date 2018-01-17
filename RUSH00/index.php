@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>E-market</title>
 <?php
 	include "core/header.php";
 	include "core/login.php";

@@ -19,7 +19,7 @@ if (isset($_POST['conne']))
 		else
 		{
 			$_SESSION['loggued_on_user'] = $_POST['mail'];
-			header("Location: index.php");
+			echo '<script>window.location="index.php"</script>';
 		}
 	}
 }

@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
    			exit("Les fichier sont introuvable");
    		}
    		$type_file = $_FILES['ufile']['type'][0];
-   		if( !strstr($type_file, 'png') && !strstr($type_file, 'jpeg') && !strstr($type_file, 'bmp') && !strstr($type_file, 'gif') )
+   		if(!strstr($type_file, 'png') && !strstr($type_file, 'jpeg') && !strstr($type_file, 'bmp') && !strstr($type_file, 'gif'))
    		{
    			exit("Le fichier n'est pas une image");
 

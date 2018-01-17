@@ -42,9 +42,8 @@ if (isset($_POST['modify']))
 		|| !isset($_POST['address']) || !isset($_POST['postal_code'])
 		|| !isset($_POST['mail'])|| !isset($_POST['city']))
 	{
-					echo "lol";
-			$err_enre = "N'oubliez pas de remplir les champs obligatoires";
-		}
+		$err_enre = "N'oubliez pas de remplir les champs obligatoires";
+	}
 	else
 	{
 

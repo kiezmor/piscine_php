@@ -22,7 +22,7 @@ if (isset($_GET['id']))
 <div class="wrapper">
 <div class="single_wr">
 	<div class="cadre">
-		<img src="<?php echo $row['image']; ?>" alt="">
+		<img class="productImg" src="<?php echo $row['image']; ?>" alt="">
 	</div>
 
 	<div class="desc">
@@ -32,8 +32,8 @@ if (isset($_GET['id']))
 		<p class="price">
 			<?php echo $row['prix']; ?>
 		</p>
-		<p class="add_to_carte">
-			<p>Quantite :</p>
+		<p class="add_to_cart">
+			<p>Quantité :</p>
 			<form action="article.php?id=<?php echo $_GET['id'];?>" method="post">
 				<input type="text" name="quantity" class="quantity_single" value="1"/>
 				<input class="addcart" type="submit" name="addtocart" value="Ajoutez au panier">
@@ -47,7 +47,7 @@ if (isset($_GET['id']))
 }
 }
 else{
-	
+
 }
 
 include 'core/footer.php';

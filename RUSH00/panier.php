@@ -14,7 +14,7 @@ if (array_key_exists('cart', $_SESSION) && $_SESSION['cart'] !== NULL)
 		<th>Produit</th>
 		<th>Quantité</th>
 		<th>Prix total</th>
-		<th>Prix a l'unite</th>
+		<th>Prix à l'unite</th>
 	</thead>
 	<?php
 	foreach ($_SESSION['cart'] as $key => $value)

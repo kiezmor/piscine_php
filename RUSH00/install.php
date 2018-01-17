@@ -5,11 +5,11 @@
 	{
 		$sql = file_get_contents("db.sql");
 		$sql_array = explode(";", $sql);
-		foreach ($sql_array as $p) 
+		foreach ($sql_array as $p)
 			mysqli_query($link, $p);
 	}
 ?>
 
 <form action="install.php" method="post">
-	<input type="submit" name="submit" value="INSTALL" />
+	<input type="submit" name="submit" value="INSTALL"/>
 </form>

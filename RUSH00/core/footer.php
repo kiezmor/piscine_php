@@ -23,24 +23,23 @@
 		</div>
 
 		<div class="tab-foot">
+			<h4>Le vin</h4>
+			<div class="text">
+				<p>Le vin est une boisson alcoolisée obtenue par la fermentation du raisin, fruit de la vigne viticole.
+
+				La transformation du raisin en vin est appelée la vinification. L'étude du vin est l'œnologie. La grande variété de vins existant au monde s'explique par les différences de terroirs, de cépages, de modes de vinification ou de types d'élevage. Ainsi ils peuvent donner des vins rouges, rosés ou blancs, mais aussi des vins avec un taux de sucre résiduel variant (secs ou doux), ou une effervescence variante (tranquilles ou effervescents). La viticulture a colonisé une vaste partie du monde et de très nombreux pays sont producteurs de vin.
+
+				Selon sa définition légale en Europe1, le vin est le produit obtenu exclusivement par la fermentation alcoolique, totale ou partielle, de raisins frais, foulés ou non, ou de moûts de raisins, les boissons alcoolisées aromatisées à base de raisins ne pouvant pas comporter cette appellationN 1. Son titre alcoolique ne peut être inférieur à 8,5 % en volume.</p>
+			</div>
+		</div>
+
+		<div class="tab-foot">
 			<h4>Nous contacter</h4>
 			<div class="text">
 				<ul>
 					<li>42 42 42 42 42</li>
 					<li>qwerty@gmail.com</li>
 				</ul>
-			</div>
-		</div>
-
-		<div class="tab-foot">
-			<h4>Compte</h4>
-			<div class="text">
-				<?php
-				if(isset($_SESSION['loggued_on_user']) && $_SESSION['loggued_on_user'] != "")
-				{
-					echo "<a href=\"user.php\">Parametres du compte</a>";
-				}
-				?>
 			</div>
 		</div>
 	</center>

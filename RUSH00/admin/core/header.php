@@ -9,6 +9,7 @@
 
 <html>
 <head>
+	<title>The Cave - Admin</title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../css/trydotcss.css" />

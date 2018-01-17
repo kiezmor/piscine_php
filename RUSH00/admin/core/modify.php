@@ -27,14 +27,13 @@ if (isset($_POST['modify']))
 	}
 
 }
-
 elseif (isset($_POST['delete']))
 {
 	$id = mysqli_real_escape_string($link, $_GET['id']);
 	$sql = "DELETE FROM produit WHERE id=$id";
 	mysqli_query($link, $sql);
 	echo $sql;
+	echo '<script>window.location="article.php"</script>';
 }
-
 ?>
 

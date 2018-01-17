@@ -1,107 +1,95 @@
-body{
-		font-family:Open Sans;
-}
 * {
     box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif;
 }
-p{
-	font-size: 12px;
+p {
+		font-size: 12px;
 }
 
 *::after, *::before {
     box-sizing: border-box;
 }
-
 header{
     width: 1140px;
     padding-left: 15px;
     padding-right: 15px;
+		text-align: center;
 }
-
 .clearfix::after, .clearfix::before{
     content: " ";
     display: table;
 }
-
 ul li{
 	list-style-type: none;
 }
 a{
-	font-family:Open Sans;
 	color:#4c4c4c;
 	text-decoration: none;
 }
-
 a:hover{
 	text-decoration: none;
 	color: brown;
-
-
 }
 .wrapper{
-	width: 1140px;
+  width: 870px;
+  display: block;
 	margin: 0 auto;
 }
-
 .account a{
     font-size: 14px;
 }
 .logo{
-	width: 450px;
+	display: block;
+	margin: 0 auto;
 }
-
 .account{
 	float: right;
 	padding: 0 10px 0 0;
     width: 740px;
 }
 .account ul li{
-    display: inline-block;
+  display: inline-block;
 	list-style-type: none;
 	margin-right: 10px;
 	text-align: center;
 }
-
 .account ul {
     margin: 10px 1px 0 0;
     text-align: right;
 }
-
-ul.menu {
-	padding-left: 0;
-}
-
 .prod_ran{
 	 margin-top: 40px;
 }
 .menu li:first-child{
 	margin-left: 0;
 }
-.menu{
+.menu {
 	background-color: #FAFAFA;
 	border-top: 1px solid black;
-	margin-bottom: 0;
+  overflow: hidden;
 }
-.menu li{
+.menu li {
 	display: inline-block;
-	 padding: 19px 5px 20px;
-
-	margin-left: 20px;
+  text-align: center;
+	padding: 19px 5px 20px;
 }
-
-.menu li a{
+.menu ul{
+  display: block;
+  margin: 0 auto;
+}
+.menu li a {
 	font-size: 14px;
-    font-weight: 700;
+  font-weight: 700;
 	padding: 22px 26px 20px;
 }
-
 .menu li a:hover{
 	text-decoration: none;
-	color: brown;
-    font-weight: 700;
+	color: white;
+  font-weight: 700;
 	padding: 22px 26px 20px;
+	background-color: #008CBA;
+  transition: 0.4s;
 }
-
 .prod_ran section{
     border: 1px solid #e6e6e6;
     display: inline-block;
@@ -109,45 +97,47 @@ ul.menu {
     padding: 18px;
     width: 18%;
 }
-
 .prod_ran section:hover{
     border: 1px solid black;
 }
-
 .prod_ran section img{
   height: 200px;
 	display: inline-block;
 	width: 100%;
 }
-
 .prod_ran section:last-child{
 	margin-right: 0;
 }
-
 .tab-foot{
     float: left;
     padding: 15px;
     width: 25%;
 }
-
 .tab-foot ul{
 	padding-left: 0;
 }
 .tab-foot h4{
-	color: brown;
+	color: #008CBA;
 	padding: 10px 0 16px;
 	border-bottom: 1px solid #e1e1e1;
 }
-
+.tab-foot h4:hover{
+  font-size: 18px;
+  transition: 0.4s;
+}
+.add_to_cart {
+	display: block;
+	margin:0 auto;
+}
 .product{
 	font-weight: 400;
 	margin-top: 10px;
 }
-
 .price{
 	color: black;
 	font-size: 16px;
 	font-weight: bold;
+	text-align: center;
 }
 .price:after{
 	content: ' €';
@@ -157,10 +147,8 @@ footer{
 	background-color: #FAFAFA;
 	border-top: 1px solid black;
 }
-
-
 .form h3{
-	background: none repeat scroll 0 0 #fafafa;
+	   background: none repeat scroll 0 0 #fafafa;
     border-bottom: 1px solid black;
     border-radius: 5px 5px 0 0;
     font-size: 14px;
@@ -168,7 +156,6 @@ footer{
     padding: 17px 30px;
     margin: 0;
 }
-
 .form fieldset{
 	border: 1px solid black;
     border-radius: 5px;
@@ -176,19 +163,15 @@ footer{
     margin: 10px 0 25px;
     padding: 0;
 }
-
 .labele{
 	 padding: 22px;
 
 }
-
 .labele label{
 	width: 170px;
 	margin-bottom: 15px;
     display: inline-block;
 }
-
-
 input{
 	background: none repeat scroll 0 0 #f2f2f2;
     border: 1px solid black;
@@ -196,14 +179,12 @@ input{
     color: #4c4c4c;
     cursor: pointer;
     display: inline-block;
-    font-family: Open Sans;
     font-size: 12px;
     line-height: 18px;
     outline: medium none;
     padding: 7px 10px 7px;
     transition: background-color 0.6s ease 0s;
 }
-
 .erreur{
 	color: red;
     display: inline-block;
@@ -211,9 +192,8 @@ input{
     margin-left: 25px;
     margin-top: 17px;
 }
-
 .succ{
-	    color: #96CA2D;
+	  color: #96CA2D;
     display: inline-block;
     font-weight: bold;
     margin-left: 25px;
@@ -225,59 +205,61 @@ input{
     width: 45%;
 }
 .labele .submit{
-	background: none repeat scroll 0 0 brown;
+	background: none repeat scroll 0 0 #008CBA;
     border: medium none;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid black;
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: Open Sans;
     font-size: 12px;
     font-weight: 600;
     padding: 5px 20px 4px;
-    transition: background 0.2s ease 0s;
+    transition: background 1.2s ease 0s;
 }
-
 .single_wr{
   padding-top: 30px;
 }
-
 .single_wr div{
 	float: left;
 }
 .single_wr img{
   height: 400px;
-    width: 400px;
+  width: 400px;
 }
-
+.productImg:hover{
+  height: 420px;
+  width: 420px;
+  transition: 0.5s;
+}
 .title_product{
 	 padding: 24px 0;
 }
-
 .title_product h1{
    font-size: 30px;
     font-weight: 400;
     line-height: 30px;
 }
 .cadre{
-   border: 1px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
     border-radius: 5px;
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.03);
     height: 418px;
     padding: 8px;
     width: 418px;
 }
-
+.cadre:hover{
+    height: 439px;
+    width: 439px;
+    transition: 0.5s;
+}
 .clearboth{
 	clear: both;
 }
-
 .desc .description{
 	border-bottom: 1px solid #e6e6e6;
 	padding-bottom: 20px;
 }
-
 .desc .price{
     border-bottom: 1px solid #e6e6e6;
     font-size: 40px !important;
@@ -295,17 +277,17 @@ input{
 .desc{
 	width: 333px;
 }
-
 .addcart{
-	background-color: brown;
+	background-color: #008CBA;
 	color: white;
-	font-weight: bold;
+	border: none;
 }
-
-.quantity_single{
-margin-right: 22px;
+.quantity_single {
+	text-align: right;
+	border: none;
+	margin-right: 20px;
+	margin-left: 20px;
 }
-
 .custom-block-product{
     background: none repeat scroll 0 0 #fff;
     border-radius: 5px;
@@ -315,51 +297,43 @@ margin-right: 22px;
     padding: 0 20px 20px;
     width: 229px;
 }
-
 .custom-block-product h3{
 	border-bottom: 1px solid #e5e5e5;
-	    font-weight: 600;
-    line-height: 22px;
-       padding-bottom: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  padding-bottom: 15px;
   font-size: 18px !important;
 
 }
-
 .custom-block-product p{
-   font-weight: 400;
-    line-height: 21px;
+  font-weight: 400;
+  line-height: 21px;
 	padding-bottom: 15px;
 	padding: 14px 0 0 !important;
 }
-
 strong{
 	font-weight: 800;
 }
-
-
 .admin_form img{
-       float: left;
-    margin-bottom: 14px;
-    margin-right: 25px;
+  float: left;
+  margin-bottom: 14px;
+  margin-right: 25px;
 }
-
 th, .th{
-       background: none repeat scroll 0 0 #fafafa;
+  	background: none repeat scroll 0 0 #fafafa;
     border-bottom: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
     font-size: 14px;
     font-weight: 700;
     padding: 17px 30px;
 }
-
 td{
-        border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
     padding: 17px 20px;
     text-align: center;
     vertical-align: top;
 }
-
 .total{
       background: none repeat scroll 0 0 #FAFAFA;
     float: right;
@@ -375,11 +349,9 @@ table{
     width: 100%;
     margin-bottom: 0;
 }
-
 .clearfix{
     clear: both;
 }
-
 .button{
     border-radius: 8px;
     display: inline-block;
@@ -387,7 +359,6 @@ table{
     margin-top: 32px;
     padding: 17px;
 }
-
 .prix_to{
     color: red;
     font-size: 31px;

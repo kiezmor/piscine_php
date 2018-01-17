@@ -9,9 +9,7 @@ $array_cat = mysqli_query($link, $query_cat);
 	<fieldset>
 		<div class="labele">
 		<label for="name">Nom du produit: </label><input type="text" name="nom" value="" /> <br>
-		<label for="prix">Prix : </label> <input type="text" name="prix" value=""> <br>
-		
-
+		<label for="prix">Prix : </label> <input type="number" name="prix" value=""> <br>
 		<label for="descr">Description : </label> <textarea type="textarea" name ="descr" rows="4" cols="50"/> </textarea><br>
 		 <input type="hidden" name="MAX_FILE_SIZE" value="99999999999">
 <label for=""> Image : </label><input name="ufile[]" type="file" id="ufile[]" size="50" /> <br>

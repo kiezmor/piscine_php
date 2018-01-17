@@ -7,7 +7,7 @@ session_start();
 <head>
 	<meta charset="UTF-8">
 	<title>Admin</title>
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/trydotcss.css">
 </head>
 <body>
 
@@ -44,12 +44,12 @@ else
 <form id="create-account_form" class="std" method="post" action="index.php">
 	<fieldset>
 		<h3>Connexion</h3>
-		<?php   
+		<?php
 		if(isset($conne))
 		{
 			if ($conne !== "OK")
 				echo "<span class='erreur'> $conne </span>";
-				
+
 		}
 	?>
 		<div class="labele">

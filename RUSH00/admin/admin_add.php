@@ -1,5 +1,6 @@
 <?php
-	include "connect.php";
+	include "core/header.php";
+	include "../connect.php";
 	if (isset($_POST['acc_admin']))
 	{
 		$query = mysqli_query($link, "SELECT * FROM `admin`");
@@ -19,19 +20,19 @@
 				VALUES (?, ?)");
 			$bind = mysqli_stmt_bind_param($stmt, "ss", $_POST['login'], hash("whirlpool", $_POST['passwd']));
 			$exec = mysqli_stmt_execute($stmt);
-			echo '<script>window.location="index.php"</script>';
+			echo '<script>window.location="admin.php"</script>';
 			// header("Location:./index.php");
 		}
 	}
 ?>
 
-<form id="create-account_form" class="std" method="post" action="config.php">
+<form id="create-account_form" class="std" method="post" action="admin_add.php">
 	<fieldset>
 		<h3>Creation compte admin</h3>
 		<div class="labele">
 		<label for="login">Login : </label><input id="login" type="text" name="login" /> <br>
 		<label for="passwd">Mot de pase : </label><input id="passwd" type="password" name="passwd" /> <br>
-		<input type="submit" class="submit" value="Se connecter" name="acc_admin">
+		<input type="submit" class="submit" value="Creer" name="acc_admin">
 		</div>
 	</fieldset>
 </form>
